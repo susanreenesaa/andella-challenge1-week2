@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head> </head>
+
+  <body>
     <script>
-      var birthyear = prompt("enter year of birth");
-      var currentyear = new Date().getFullYear();
-      var yeardifference = currentyear - birthyear;
-      if (yeardifference < 18) {
-        console.log("You are a minor");
-      } else if (18 <= yeardifference && yeardifference <= 36) {
-        console.log("You are a Youth");
-      } else {
-        console.log("you are an Elder");
+      while (true) {
+        var birthYear = prompt("enter year of birth");
+
+        var currentYear = new Date().getFullYear();
+        var yearDifference = currentYear - birthYear;
+        if (birthYear === "quit") {
+          alert("Thanks for your time!");
+          break;
+        } else if (yearDifference < 18) {
+          alert("You are a minor");
+          console.log("You are a minor");
+        } else if (18 <= yearDifference && yearDifference <= 36) {
+          alert("You are a Youth");
+          console.log("You are a Youth");
+        } else {
+          alert("you are an Elder");
+          console.log("you are an Elder");
+        }
       }
     </script>
-  </head>
-
-  <body></body>
+  </body>
 </html>
