@@ -1,9 +1,7 @@
-//the issue is I want to change num to incrementing numbers
 var squareArray=[];
 var object2=[]
 for(num=1; num<15; num++){    
 var object ={
-    // i want num(key):to be equal to num(value)
     1 :num*2
     
 }
